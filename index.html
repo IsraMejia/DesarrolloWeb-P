@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- comentario, aqui se le dice que tipo de archivo es -->
+<html lang="es">
+    <meta charset="UTF-8"> <!--Para el idioma en cualquier navegador-->
+    <head>
+        <title>IsraMejía HackerPro</title>
+        <link rel="icon" type="image/png" href="images/favicon.png"> <!--El icono a lado de la pestaña-->
+    </head>
+    <body> <!--Lo que essta aqui se visualiza en el navegador-->
+        <header><!--cabcera de la pagina -->
+           <div>
+              <figure>
+                   <img src="images/logo.png" alt="texto alternativo si no carga xd Logo IsraHackerPro">
+               </figure>
+           </div>     
+                <ol>
+                    <li><!--List item-->
+                        <a href="#portafolio">portafolio</a>
+                        <!--ancla, pone en azul como link , 
+                        el # ayuda a localizar el ID de los enlace interno ,  para Externos de la pagina es ./portafolio.html -->
+                    </li>
+                    <li><!--List item-->
+                        <a href="#eventos" >  Experiencia</a><!--ancla-->
+                    </li>
+                    <li><!--List item-->
+                        <a href="#contacto">trabajemos juntos</a><!--ancla-->
+                    </li>
+
+                </ol> <!--listas ordenadas-->
+
+            </nav>
+        </header>
+
+        <section>
+            <h1> 
+                Hola Soy <br> <strong>IsraHackerPro</strong>  B) <br>y este es mi <strong>portafolio web</strong> BD 
+                <!-- <br> es un salto de linea | 
+                    strong es para resaltar aun mas en negritas se notara mas en los estilos-->
+            </h1>
+            <img src="images/hero.jpg" alt="imagen mia xd" width="700"> 
+            <!--hero es la imagen de la parte principal de las paginas-->
+
+        </section>    <!--con "alt+shift+abajo" duplicamos la linea de codigo-->
+        
+        <section id="portafolio"> <h2>Proyectos personales</h2>
+            <article>
+                <h3>AeroDeslizador</h3>
+                <h6>C++, python</h6>
+                <p><small> <strong>Fecha:</strong> 10 junio 2019</small></p>
+                <p><small> <strong>Puedes ver el codigo en:</strong> mi github xD   </small></p>
+                <p>
+                    Proyecto de mecanica donde se vio mucha electronica y progrmacion para crear
+                    <br> un AeroDeslizador que no jalo xD, pero les dejare unas fotos cools jaja <br>
+                <img src="images/AD.jpg" alt="aerodezlizador" width="300">
+                </p>
+            </article>
+        </section>
+
+        <section id="eventos">
+                <h2> Experiencias :</h2>
+            <article>
+                <figure> <!--Contenedor "padre de la imagen"-->
+                  <img src="images/ibm.png" width="300" alt="imagen de ibm porque no encuentro de hackathon xd">  
+                </figure>
+                <h3>Si tuviera una conferencia mia o hackathon ganado lo pondria aqui xD</h3>
+                <p>Aqui se ve como gane ohsi oh si <br> como de que no xD</p>
+                <p>Link del hackathon que gane xD</p>
+
+                <p> <br> a continuacion una cancion que me gusta xD</p>
+                <a href="https://www.youtube.com/watch?v=5nQg4MVU_cY" target="_blank"> Ver cancnion que me gusta xd</a>
+                <!--El atributo target="_blank" es para abrir en otra pestaña-->
+            </article>
+        </section>
+        
+        <section id="contacto">
+            <form action="/suscripcion/"></form> <!--indica lo que se hara, se ocupa en el backend-->  
+            <h3>Creemos algo juntos algo juntos ;)</h3>
+            <label for="email">dejame tu email</label><!--al poner en el email el id del input tex, se presiona y lo enfoca-->
+            <input type="datetime" placeholder="escribe tu email ;D" id="email">
+            <!--el datetime permite autocompletar con el cache del navegador si el ussuario lo desea-->
+            <input type="submit" value="texto del boton">
+            <button>Enviar xd</button>
+        </section>
+
+
+        <footer>pie de pagina</footer>
+
+    </body>
+</html> <!--Con "hmtl:5 te lo pone en automatico :v jaja"-->
