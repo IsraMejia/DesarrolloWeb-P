@@ -1,0 +1,7 @@
+body{
+  background : springgreen
+  /*se le puso mediante css el color al body del index.html, mediante la etiqueta link*/
+}
+header {
+  background : red;
+}
