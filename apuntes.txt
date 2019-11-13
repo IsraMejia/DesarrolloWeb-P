@@ -1,0 +1,2 @@
+Prueba:
+git remote add github https:... //Para agregar donde se guardara el repo local en github
