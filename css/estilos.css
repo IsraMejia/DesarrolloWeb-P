@@ -3,5 +3,11 @@ body{
   /*se le puso mediante css el color al body del index.html, mediante la etiqueta link*/
 }
 header {
-  background : red;
-}
+  background : rgb(190, 14, 14);
+  color: rgb(69, 151, 228)
+}/*Selector de etiqueta, SIN PUNTO Y COMA AL FINAL*/
+
+
+/*body header div nav ol li a{
+}*/
+
