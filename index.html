@@ -10,32 +10,39 @@
     
     
     <body> <!--Lo que essta aqui se visualiza en el navegador-->
-        <header>
-<!--cabcera de la pagina | el estilo "online" tiene mas valor que la del selector como etiqueta -->
-           <div>
-              <figure>
-                   <img src="images/logo.png" alt="texto alternativo si no carga xd Logo IsraHackerPro">
-               </figure>
-           </div>     
-                <ol>
-                    <li><!--List item-->
-                        <a class="link" href="#portafolio">portafolio</a>
-                        <!--ancla, pone en azul como link , 
-                        el # ayuda a localizar el ID de los enlace interno ,  para Externos de la pagina es ./portafolio.html -->
-                    </li>
-                    <li><!--List item-->
-                        <a class="link" href="#eventos" >  Experiencia</a><!--ancla-->
-                    </li>
-                    <li><!--List item-->
-                        <a class="link" href="#contacto">trabajemos juntos</a><!--ancla-->
-                    </li>
-
-                </ol> <!--listas ordenadas-->
-
-            </nav>
+        <header class="header">
+            <!--cabcera de la pagina | el estilo "online" tiene mas valor que la del selector como etiqueta -->
+            <div>
+                <figure>
+                    <img src="images/logo.png" alt="texto alternativo si no carga xd Logo IsraHackerPro">
+                </figure>
+                <nav class="menu">
+                    <ol>
+                        <li>
+                            <!--List item-->
+                            <a class="link" href="#portafolio">portafolio</a>
+                            <!--ancla, pone en azul como link , 
+                                            el # ayuda a localizar el ID de los enlace interno ,  para Externos de la pagina es ./portafolio.html -->
+                        </li>
+                        <li>
+                            <!--List item-->
+                            <a class="link" href="#eventos"> Experiencia</a>
+                            <!--ancla-->
+                        </li>
+                        <li>
+                            <!--List item-->
+                            <a class="link" href="#contacto">trabajemos juntos</a>
+                            <!--ancla-->
+                        </li>
+            
+                    </ol>
+                    <!--listas ordenadas-->
+            
+                </nav>
+            </div>
         </header>
 
-        <section>
+        <section class="hero">
             <h1> 
                 Hola Soy <br> <strong>IsraHackerPro</strong>  B) <br>y este es mi <strong>portafolio web</strong> BD 
                 <!-- <br> es un salto de linea | 
@@ -46,48 +53,57 @@
 
         </section>    <!--con "alt+shift+abajo" duplicamos la linea de codigo-->
         
-        <section id="portafolio"> <h2>Proyectos personales</h2>
-            <article>
-                <h3>AeroDeslizador</h3>
-                <h6>C++, python</h6>
-                <p><small> <strong>Fecha:</strong> 10 junio 2019</small></p>
-                <p><small> <strong>Puedes ver el codigo en:</strong> mi github xD   </small></p>
-                <p>
+        <section id="portafolio" class="portfolio">
+            <h2>Proyectos personales</h2>
+            <article class="project">
+                <h3 class="project-title">AeroDeslizador</h3>
+                <h6 class="project-course">C++, python</h6>
+                <!--Cuando le agarre la onda cambiar la clase a Algo relacionado a los Lenguajes-->
+                <p class="project-date"><small> <strong>Fecha:</strong> 10 junio 2019</small></p>
+                <p class="project-url"><small> <strong>Puedes ver el codigo en:</strong> mi github xD </small></p>
+                <p class="project-description">
                     Proyecto de mecanica donde se vio mucha electronica y progrmacion para crear
                     <br> un AeroDeslizador que no jalo xD, pero les dejare unas fotos cools jaja <br>
-                <img src="images/AD.jpg" alt="aerodezlizador" width="300">
+                    <figure class="project-imageContainer"> 
+                        <img class="project-image" src="images/AD.jpg" alt="aerodezlizador" width="300">
+                    </figure>       
                 </p>
             </article>
         </section>
 
         <section id="eventos">
-                <h2> Experiencias :</h2>
-            <article>
-                <figure> <!--Contenedor "padre de la imagen"-->
-                  <img src="images/ibm.png" width="300" alt="imagen de ibm porque no encuentro de hackathon xd">  
+            <h2> Experiencias :</h2>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <!--Contenedor "padre de la imagen"-->
+                    <img class="event-image" src="images/ibm.png" width="300"
+                        alt="imagen de ibm porque no encuentro de hackathon xd">
                 </figure>
-                <h3>Si tuviera una conferencia mia o hackathon ganado lo pondria aqui xD</h3>
-                <p>Aqui se ve como gane ohsi oh si <br> como de que no xD</p>
-                <p>Link del hackathon que gane xD</p>
-
+                <h3 class="event-title">Si tuviera una conferencia mia o hackathon ganado lo pondria aqui xD</h3>
+                <p class="event-description">Aqui se ve como gane ohsi oh si <br> como de que no xD</p>
+                <p class="event-url">Link del hackathon que gane xD</p>
+        
                 <p> <br> a continuacion una cancion que me gusta xD</p>
                 <a href="https://www.youtube.com/watch?v=5nQg4MVU_cY" target="_blank"> Ver cancnion que me gusta xd</a>
                 <!--El atributo target="_blank" es para abrir en otra pestaña-->
             </article>
         </section>
         
-        <section id="contacto">
-            <form action="/suscripcion/"></form> <!--indica lo que se hara, se ocupa en el backend-->  
+        <section id="contacto" class="contact">
+            <form action="/suscripcion/" class="form-email">
+            <!--indica lo que se hara, se ocupa en el backend-->
             <h3>Creemos algo juntos algo juntos ;)</h3>
-            <label for="email">dejame tu email</label><!--al poner en el email el id del input tex, se presiona y lo enfoca-->
+            <label for="email">dejame tu email</label>
+            <!--al poner en el email el id del input tex, se presiona y lo enfoca-->
             <input type="datetime" placeholder="escribe tu email ;D" id="email">
             <!--el datetime permite autocompletar con el cache del navegador si el ussuario lo desea-->
             <input type="submit" value="texto del boton">
             <button>Enviar xd</button>
+            </form>
         </section>
 
 
-        <footer>pie de pagina</footer>
+        <footer class="footer">pie de pagina</footer>
 
     </body>
 </html> <!--Con "hmtl:5 te lo pone en automatico :v jaja"-->
