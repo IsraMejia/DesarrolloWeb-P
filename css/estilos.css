@@ -31,6 +31,7 @@ h1{
 /*Los estilos que tienen mas importancia en los CSS son los de hasta abajo*/
   letter-spacing: -.2px;
   color: white;
+  margin: 100px 500px 70px 30px; /*top right bottom left */
   /*text-transform: uppercase;
   /*El cambio a mayusculas se recomienda hacer mediante estilos, 
   ya que los motores de busqueda revisan todo desde el HTML y las mayus no son muy comunes*/
@@ -46,6 +47,11 @@ h1 strong{
   background-size: 500px, 300px;/*ancho,alto*/
   background-repeat: no-repeat; /*por defecto se repite*/
   background-position-x: right;
+  
+}
+
+.portfolio{
+  background-color: #fafafa);
 }
 
 .project{
@@ -63,6 +69,10 @@ h1 strong{
   border: 1px solid rgb(148, 146, 146);
   border-radius: 10px;
   border-top-right-radius:70px ;
+  margin-bottom: 15px;
+  background-color: rgba(163, 220, 243, 0.904);
+  margin: 10px;
+  padding: 20px;/*margen inverso, entre el contenido y el contenedor*/
   
 }
 
@@ -71,6 +81,7 @@ h1 strong{
   border: 1px solid rgb(148, 146, 146);
   border-radius: 10px;
   border-top-right-radius:70px ;
+  margin: 10px 10px; /*buttom left right top auto=centra*/
 }
 
 .project-imageContainer{

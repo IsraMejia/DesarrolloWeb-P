@@ -7,3 +7,12 @@ Command	+ Short + /
 Herramientas del Desarrollador- Navegador:
 Partes azules = espacio de la etiqueta
 Partes  naranjas = margenes de la etiqueta
+
+
+display none ocupa todo el ancho posible
+display : inline /*Usa toda la pantalla sin marcos*/
+display: block/*da un salto de linea*/
+display: inline /*permite tener otras etiquetas a lado, solo las que quepan*/
+display: inline-block 
+/*Respeta el ancho anteriormente definido y lo pone al costado al siguiente elemento*/
+display: flex; /*Asume valores para poner un elemento al costado del otro*/
