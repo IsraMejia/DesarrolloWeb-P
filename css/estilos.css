@@ -51,7 +51,7 @@ h1 strong{
 }
 
 .portfolio{
-  background-color: #fafafa);
+  background-color: #fafafa;
 }
 
 .project{
@@ -98,3 +98,20 @@ h1 strong{
   color: aliceblue;
   text-decoration: none;/*sin decoraciones, sin subrayado*/
 }/*Selector descendente, a todas las anclas(links) del header les da estilos*/
+
+.flexbox{
+  display: flex;
+  /* flex-direction: row; */ /*Por defecto esta en renglones*/
+  /* flex-direction: column; */
+  flex-wrap: wrap;/*para que "caigan", se recorra en nuevas renglones dependiedndo el tamaño*/
+  justify-content: space-between;
+}
+
+.box{
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border: 1px solid red;
+  
+  flex-shrink: 0;/*capacidad de encogimiento E [0,1]*/
+}
