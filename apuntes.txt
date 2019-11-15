@@ -1,3 +1,9 @@
 Prueba:
 git remote add github https:... //Para agregar donde se guardara el repo local en github
 
+Comentar rapido xdd:
+Command	+ Short + / 
+
+Herramientas del Desarrollador- Navegador:
+Partes azules = espacio de la etiqueta
+Partes  naranjas = margenes de la etiqueta

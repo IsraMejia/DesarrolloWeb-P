@@ -1,7 +1,8 @@
+/*
 body{
   background : springgreen
   /*se le puso mediante css el color al body del index.html, mediante la etiqueta link*/
-}
+/*}
 header {
   background : rgb(190, 14, 14);
   color: rgb(69, 151, 228)
@@ -11,3 +12,78 @@ header {
 /*body header div nav ol li a{
 }*/
 
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  
+
+  
+}
+
+h1, h2, h3, h4, h5{
+  font-family: "Fjalla One", sans-serif;/*Se selecciona la letra de google fonts agregada en el html, si  no la encuentra usara sans-serif*/
+  font-weight: normal;
+  /*font-style: italic;*/
+}
+
+h1{
+  font-size: 40px;
+  line-height: 150%; 
+/*Los estilos que tienen mas importancia en los CSS son los de hasta abajo*/
+  letter-spacing: -.2px;
+  color: white;
+  /*text-transform: uppercase;
+  /*El cambio a mayusculas se recomienda hacer mediante estilos, 
+  ya que los motores de busqueda revisan todo desde el HTML y las mayus no son muy comunes*/
+  /*text-decoration: dashed;*/
+}
+h1 strong{
+  color: rgb(0, 153, 255);
+}/*Selector de etiqueta para h1 en negritas*/
+.hero{
+  height: 300px;
+  background-color: rgb(53, 44, 133);
+  background-image: url('../images/hero.jpg') ;/*../image = salir del directorio y entrar a image*/
+  background-size: 500px, 300px;/*ancho,alto*/
+  background-repeat: no-repeat; /*por defecto se repite*/
+  background-position-x: right;
+}
+
+.project{
+  /* border-top: 10px solid green ;/*tamaño,tipo,estilo
+  border-right: 10px solid blue;
+  border-left: 10px solid chocolate;
+  border-bottom: 10px solid yellow; */
+
+  /*
+  border-top-color: rgb(243, 140, 43);
+  /*Por defecto toma el color del texto
+  border-top-width: 12px;
+  border-top-style: solid;*/
+
+  border: 1px solid rgb(148, 146, 146);
+  border-radius: 10px;
+  border-top-right-radius:70px ;
+  
+}
+
+.project-details{
+  width: 500px;
+  border: 1px solid rgb(148, 146, 146);
+  border-radius: 10px;
+  border-top-right-radius:70px ;
+}
+
+.project-imageContainer{
+  width: 500px;
+  
+}
+
+.header{
+  background-color: rgba(27, 92, 148, 0.911);
+  color: white; /*color a blanco del texto*/
+}
+
+.header a{
+  color: aliceblue;
+  text-decoration: none;/*sin decoraciones, sin subrayado*/
+}/*Selector descendente, a todas las anclas(links) del header les da estilos*/
