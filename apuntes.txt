@@ -16,3 +16,29 @@ display: inline /*permite tener otras etiquetas a lado, solo las que quepan*/
 display: inline-block 
 /*Respeta el ancho anteriormente definido y lo pone al costado al siguiente elemento*/
 display: flex; /*Asume valores para poner un elemento al costado del otro*/
+
+html flxbox
+<div class="flexbox"><!--.flexbox para el automatico y .box-->
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            
+        </div>
+
+css
+.flexbox{
+  display: flex;
+  /* flex-direction: row; */ /*Por defecto esta en renglones*/
+  /* flex-direction: column; */
+  flex-wrap: wrap;/*para que "caigan", se recorra en nuevas renglones dependiedndo el tamaño*/
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* flex-direction: column; */
+  justify-content: center;
+}
+
+.box{
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border: 1px solid red;

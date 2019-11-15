@@ -12,46 +12,37 @@
     
     
     <body> <!--Lo que essta aqui se visualiza en el navegador-->
-        
-        <div class="flexbox"><!--.flexbox para el automatico y .box-->
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            
-        </div>
-        
+
         <header class="header">
         <!--cabcera de la pagina | el estilo "online" tiene mas valor que la del selector como etiqueta -->
-        <a href="">Rex</a>
-        <a href="">Coco</a>
-            <div>
-                <figure>
-                    <img src="images/logo.png" alt="texto alternativo si no carga xd Logo IsraHackerPro">
-                </figure>
-                <nav class="menu">
-                    <ol>
-                        <li>
-                            <!--List item-->
-                            <a class="link" href="#portafolio">portafolio</a>
-                            <!--ancla, pone en azul como link , 
-                                            el # ayuda a localizar el ID de los enlace interno ,  para Externos de la pagina es ./portafolio.html -->
-                        </li>
-                        <li>
-                            <!--List item-->
-                            <a class="link" href="#eventos"> Experiencia</a>
-                            <!--ancla-->
-                        </li>
-                        <li>
-                            <!--List item-->
-                            <a class="link" href="#contacto">trabajemos juntos</a>
-                            <!--ancla-->
-                        </li>
+            <!-- aqui habia un div que separa en dos grupos teniendo el logo y el menu juntos, 
+                ahora se pone uno despues del otro en horizontal con su display:flex;-->
+            <figure>
+                <img src="images/logo.png" alt="texto alternativo si no carga xd Logo IsraHackerPro">
+            </figure>
+            <nav class="menu">
+                <ol>
+                    <li>
+                        <!--List item-->
+                        <a class="link" href="#portafolio">Portafolio</a>
+                        <!--ancla, pone en azul como link , 
+                                                                        el # ayuda a localizar el ID de los enlace interno ,  para Externos de la pagina es ./portafolio.html -->
+                    </li>
+                    <li>
+                        <!--List item-->
+                        <a class="link" href="#eventos"> Experiencia</a>
+                        <!--ancla-->
+                    </li>
+                    <li>
+                        <!--List item-->
+                        <a class="link" href="#contacto">Trabajemos juntos</a>
+                        <!--ancla-->
+                    </li>
             
-                    </ol>
-                    <!--listas ordenadas-->
+                </ol>
+                <!--listas ordenadas-->
             
-                </nav>
-            </div>
+            </nav>
         </header>
 
         <section class="hero">

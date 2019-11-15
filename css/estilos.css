@@ -93,12 +93,47 @@ h1 strong{
   background-color: rgba(27, 92, 148, 0.911);
   color: white; /*color a blanco del texto*/
   display: flex;
+  height: 90 px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;/*Para que no salgan los numeros*/
+}
+
+figure{
+  margin: 0;
 }
 
 .header a{
   color: aliceblue;
   text-decoration: none;/*sin decoraciones, sin subrayado*/
 }/*Selector descendente, a todas las anclas(links) del header les da estilos*/
+
+.menu{
+  height: inherit;
+}
+
+.header ol {
+  display: flex;
+  height: inherit; /*Hereda de menu y menu  de header*/
+}
+
+.header ol li {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.header a {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0 10px;
+}
 
 .flexbox{
   display: flex;
