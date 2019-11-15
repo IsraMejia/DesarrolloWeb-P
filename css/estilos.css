@@ -92,6 +92,7 @@ h1 strong{
 .header{
   background-color: rgba(27, 92, 148, 0.911);
   color: white; /*color a blanco del texto*/
+  display: flex;
 }
 
 .header a{
@@ -104,7 +105,10 @@ h1 strong{
   /* flex-direction: row; */ /*Por defecto esta en renglones*/
   /* flex-direction: column; */
   flex-wrap: wrap;/*para que "caigan", se recorra en nuevas renglones dependiedndo el tamaño*/
-  justify-content: space-between;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* flex-direction: column; */
+  justify-content: center;
 }
 
 .box{
