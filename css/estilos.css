@@ -15,8 +15,6 @@ header {
 body{
   font-family: 'Source Sans Pro', sans-serif;
   
-
-  
 }
 
 h1, h2, h3, h4, h5{
@@ -31,15 +29,28 @@ h1{
 /*Los estilos que tienen mas importancia en los CSS son los de hasta abajo*/
   letter-spacing: -.2px;
   color: white;
-  margin: 100px 500px 70px 30px; /*top right bottom left */
+  margin: 0;
+  /* margin: 100px 500px 70px 30px; /*top right bottom left */
   /*text-transform: uppercase;
   /*El cambio a mayusculas se recomienda hacer mediante estilos, 
   ya que los motores de busqueda revisan todo desde el HTML y las mayus no son muy comunes*/
   /*text-decoration: dashed;*/
+
 }
+
 h1 strong{
   color: rgb(0, 153, 255);
 }/*Selector de etiqueta para h1 en negritas*/
+
+h2 {
+  color: #026fff;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 40px;
+}
+
 .hero{
   height: 300px;
   background-color: rgb(53, 44, 133);
@@ -47,11 +58,14 @@ h1 strong{
   background-size: 500px, 300px;/*ancho,alto*/
   background-repeat: no-repeat; /*por defecto se repite*/
   background-position-x: right;
+  display: flex;
+  align-items: center;
   
 }
 
 .portfolio{
   background-color: #fafafa;
+  padding: 20px;
 }
 
 .project{
@@ -71,9 +85,29 @@ h1 strong{
   border-top-right-radius:70px ;
   margin-bottom: 15px;
   background-color: rgba(163, 220, 243, 0.904);
-  margin: 10px;
   padding: 20px;/*margen inverso, entre el contenido y el contenedor*/
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.project-course, .project-date, .project-url{
+  margin: 10px 0;
+}
+
+.project-description{
+  font-size: 20px;
+}
+
+.project strong{
+  font-size: 20px;
+}
+
+.project-title{
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 0;
 }
 
 .project-details{
@@ -93,7 +127,7 @@ h1 strong{
   background-color: rgba(27, 92, 148, 0.911);
   color: white; /*color a blanco del texto*/
   display: flex;
-  height: 90 px;
+  height: 70px;
   align-items: center;
   justify-content: space-between;
 }
@@ -153,4 +187,70 @@ figure{
   border: 1px solid red;
   
   flex-shrink: 0;/*capacidad de encogimiento E [0,1]*/
+}
+
+.event-list-title{
+  margin-left: 20px;
+}
+
+.event-list{
+  display: flex;
+}
+
+.event{
+  margin: 10px;
+  width: 480px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden; /*oculta los elementos desbordados, como la imagen */
+ 
+}
+
+.event img{
+  width: 480px;
+  height: 220px;
+  object-fit: cover;/*Recorta la imagen, pero conserva sus proporciones By */
+  border-radius: 10px;
+}
+
+.event-detail{
+  margin: 20px 30px ;
+  margin-top: -40px; /*Lo recorre hacia la imagen porque es negativo, esto con el position relative
+  hace el efecto de la tarjeta sobrela imagen*/
+  position: relative;
+  padding: 5px;
+  background-color: #f4fbff;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.event-description{
+  text-align: left;
+}
+
+.event-url{  
+  margin-left: 150px;
+  text-decoration: none;
+  color: #056fff;
+  width: 60px;
+  border: 1px solid ;
+  border-radius: 18px;
+  padding: 5px 20px; /*arriba, lados*/
+}
+
+
+.footer{
+  color: white;
+  background-color: #14023d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer img{
+  vertical-align: middle;/*Por alguna razon alinea el texto y la imagen jaja*/
+}
+
+.footer a{
+  color: #b0b6f5;
 }
